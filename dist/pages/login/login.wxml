@@ -1,0 +1,14 @@
+<block>
+    <at-form bindonsubmit="onSubmit" __triggerObserer="{{ _triggerObserer }}"
+    bindonreset="onReset" __fn_onSubmit="{{true}}" data-e-onSubmit-so="this"
+    __fn_onReset="{{true}}" data-e-onReset-so="this">
+        <at-input name="username" __triggerObserer="{{ _triggerObserer }}" title="用户名"
+        type="text" placeholder="请输入用户名" value="{{username}}" bindonchange="handleChangeUserName"
+        __fn_onChange="{{true}}" data-e-handleChangeUserName-so="this"></at-input>
+        <at-input name="password" __triggerObserer="{{ _triggerObserer }}"
+        title="密码" type="text" placeholder="请输入密码" value="{{password}}" bindonchange="handleChangePassword"
+        __fn_onChange="{{true}}" data-e-handleChangePassword-so="this"></at-input>
+        <at-button formType="submit" __triggerObserer="{{ _triggerObserer }}">提交</at-button>
+        <at-button formType="reset" __triggerObserer="{{ _triggerObserer }}">重置</at-button>
+    </at-form>
+</block>

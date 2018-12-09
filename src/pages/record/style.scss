@@ -1,0 +1,46 @@
+.index {
+    background-color: #ffffff;
+    .at-form {
+        padding-right:32px;
+        .at-input__input {
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+            padding: 10px 20px;
+            margin-left: -12px;
+        }
+    }
+    .page-section {
+        padding:24px 0;
+        background-color:#FFF;
+        color:#333;
+        position:relative;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+        display: flex;
+        .section-text {
+            padding-right: 0px;
+            font-size: 32px;
+            width: 182px;
+        }
+        .section-picker {
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+            padding: 10px 20px;
+            width: calc(100% - 200px);
+            .picker {
+                font-size: 32px;
+            }
+        }
+    }
+    .button-group {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .atButton {
+            width: 340px;
+        }
+    }
+}

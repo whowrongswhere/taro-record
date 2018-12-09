@@ -1,0 +1,43 @@
+<block>
+    <view class="index">
+        <at-form __triggerObserer="{{ _triggerObserer }}">
+            <at-input name="title" __triggerObserer="{{ _triggerObserer }}" title="标题"
+            type="text" placeholder="请输入标题" value="{{title}}" bindonchange="titleChange"
+            __fn_onChange="{{true}}" data-e-titleChange-so="this"></at-input>
+            <view class="page-section">
+                <text class="section-text">类型</text>
+                <view class="section-picker">
+                    <picker mode="selector" range="{{selector}}" range-key="categoryRecordName"
+                    bindchange="onTypeChange">
+                        <view class="picker">{{selectorCheckedName}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="page-section">
+                <text class="section-text">选择日期</text>
+                <view class="section-picker">
+                    <picker mode="date" bindchange="onDateChange">
+                        <view class="picker">{{date}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="page-section">
+                <text class="section-text">选择时间</text>
+                <view class="section-picker">
+                    <picker mode="time" bindchange="onTimeChange">
+                        <view class="picker">{{time}}</view>
+                    </picker>
+                </view>
+            </view>
+            <at-textarea count="{{false}}" __triggerObserer="{{ _triggerObserer }}"
+            value="{{details}}" bindonchange="detailsChange" maxlength="200" placeholder="请输入详情..."
+            __fn_onChange="{{true}}" data-e-detailsChange-so="this"></at-textarea>
+            <view class="button-group">
+                <at-button type="secondary" __triggerObserer="{{ _triggerObserer }}" bindonclick="onSave"
+                className="atButton" __fn_onClick="{{true}}">重置</at-button>
+                <at-button type="primary" __triggerObserer="{{ _triggerObserer }}"
+                bindonclick="onSave" className="atButton" __fn_onClick="{{true}}">提交</at-button>
+            </view>
+        </at-form>
+    </view>
+</block>

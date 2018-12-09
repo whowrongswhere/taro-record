@@ -1,0 +1,29 @@
+<block>
+    <view class="{{anonymousState__temp}}" style="{{anonymousState__temp2}}"
+    bindtap="onClick" data-e-onClick-so="this">
+        <block wx:if="{{isWEAPP && !disabled}}">
+            <form report-submit="{{true}}" bindsubmit="onSumit" bindreset="onReset"
+            data-e-onSumit-so="this" data-e-onReset-so="this">
+                <button class="at-button__wxbutton" form-type="{{formType}}" open-type="{{openType}}"
+                lang="{{lang}}" session-from="{{sessionFrom}}" send-message-title="{{sendMessageTitle}}"
+                send-message-path="{{sendMessagePath}}" send-message-img="{{sendMessageImg}}"
+                show-message-card="{{showMessageCard}}" app-parameter="{{appParameter}}"
+                bindgetuserinfo="onGetUserInfo" bindgetphonenumber="onGetPhoneNumber" bindopensetting="onOpenSetting"
+                binderror="onError" bindcontact="onContact" data-e-onGetUserInfo-so="this"
+                data-e-onGetPhoneNumber-so="this" data-e-onOpenSetting-so="this" data-e-onError-so="this"
+                data-e-onContact-so="this"></button>
+            </form>
+        </block>
+        <block>
+            <block wx:if="{{loading}}">
+                <view class="at-button__icon">
+                    <at-loading color="{{loadingColor}}" __triggerObserer="{{ _triggerObserer }}"
+                    size="{{loadingSize}}"></at-loading>
+                </view>
+            </block>
+        </block>
+        <view class="at-button__text">
+            <slot></slot>
+        </view>
+    </view>
+</block>

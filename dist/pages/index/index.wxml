@@ -1,0 +1,52 @@
+<block>
+    <view class="index">
+        <at-tabs current="{{current}}" __triggerObserer="{{ _triggerObserer }}"
+        tabList="{{tabList}}" bindonclick="handleClick" __fn_onClick="{{true}}"
+        data-e-handleClick-so="this">
+            <at-tabs-pane current="{{current}}" __triggerObserer="{{ _triggerObserer }}"
+            index="{{index}}" wx:key="{{item.id}}" wx:for="{{tabList}}" wx:for-item="item"
+            wx:for-index="index">
+                <view class="feed-item" wx:key="{{data.id}}" wx:for="{{list}}" wx:for-item="data">
+                    <view class="feed-source">
+                        <view class="avatar flex1">
+                            <image src="{{userIcon}}" />
+                        </view>
+                        <view class="flex8">
+                            <text class="feed-source-txt">{{data.typeName}}</text>
+                        </view>
+                        <view class="flex1">
+                            <image class="item-more" mode="aspectFit" src="{{moreIcon}}" />
+                        </view>
+                    </view>
+                    <view class="feed-content">
+                        <view class="question">
+                            <view class="question-link">
+                                <text>{{data.title}}</text>
+                            </view>
+                        </view>
+                        <view class="answer-body">
+                            <view>
+                                <text class="answer-txt" bindtap="navigateClick" data-e-navigateClick-so="this"
+                                data-e-navigateClick-a-a="{{data}}">{{data.details}}</text>
+                            </view>
+                            <view class="answer-actions">
+                                <view class="like dot">
+                                    <view>{{data.date}}</view>
+                                </view>
+                                <view class="comments dot">
+                                    <view>{{data.time}}</view>
+                                </view>
+                                <view class="follow-it">
+                                    <view>关注</view>
+                                </view>
+                                <view class="follow-it">
+                                    <view>收藏</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </at-tabs-pane>
+        </at-tabs>
+    </view>
+</block>

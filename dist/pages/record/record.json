@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "at-form": "../../npm/taro-ui/dist/weapp/components/form/index",
+    "at-input": "../../npm/taro-ui/dist/weapp/components/input/index",
+    "at-textarea": "../../npm/taro-ui/dist/weapp/components/textarea/index",
+    "at-button": "../../npm/taro-ui/dist/weapp/components/button/index"
+  },
+  "navigationBarTitleText": "记录"
+}

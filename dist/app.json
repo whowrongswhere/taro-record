@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/my/my",
+    "pages/login/login",
+    "pages/record/record",
+    "pages/index/index",
+    "pages/index/details/details"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0068C4",
+    "navigationBarTitleText": "微信",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./static/images/index.png",
+        "selectedIconPath": "./static/images/index_focus.png"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "记录",
+        "iconPath": "./static/images/record.png",
+        "selectedIconPath": "./static/images/record_focus.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./static/images/burger.png",
+        "selectedIconPath": "./static/images/burger_focus.png"
+      }
+    ]
+  }
+}

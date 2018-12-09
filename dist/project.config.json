@@ -1,0 +1,15 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "taro-record",
+  "description": "及时记录小程序",
+  "appid": "wx40e488c3ccd24587",
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "postcss": false,
+    "minified": false,
+    "newFeature": true
+  },
+  "compileType": "miniprogram",
+  "condition": {}
+}

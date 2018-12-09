@@ -1,0 +1,43 @@
+<block>
+    <view class="answer_container">
+        <view class="question">
+            <text class="question-title">{{data.title}}</text>
+        </view>
+        <view class="answerer-wrp">
+            <view class="bg-half"></view>
+            <view class="answerer flex-wrp">
+                <view class="avatar flex-item">
+                    <image src="{{img7}}" />
+                </view>
+                <view class="answerer-info flex-item">
+                    <text class="answerer-name">{{data.typedesc}}</text>
+                    <text class="answerer-des">很重要，需关注咯！</text>
+                </view>
+                <view class="follow flex-item">
+                    <text>十 关注</text>
+                </view>
+            </view>
+        </view>
+        <view class="answer-content">
+            <text>{{data.details}}</text>
+        </view>
+        <view class="answer-footer flex-wrp">
+            <view class="operation-wrp flex-item">
+                <view class="operation flex-wrp flex-tab">
+                    <view class="operation-btn flex-item">
+                        <image src="{{img5}}" />
+                        <text>收藏</text>
+                    </view>
+                    <view class="operation-btn flex-item">
+                        <image src="{{img3}}" />
+                        <text>分享</text>
+                    </view>
+                    <view class="operation-btn flex-item"></view>
+                    <view class="operation-btn flex-item"></view>
+                    <view class="operation-btn flex-item"></view>
+                    <view class="operation-btn flex-item"></view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>
